@@ -15,5 +15,5 @@ LONG DESCRIPTION
 
     Frameworks supported:
 
-    * PowerShell 6.2 or later
+    * PowerShell 5.0 or later
     * .NET 4.0 or later

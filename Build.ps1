@@ -57,9 +57,9 @@ $Manifest = @{
     ModuleVersion = '0.3.4'
 
     RootModule = 'PSPetstoreDemo.psm1'
-    Guid = '{F0B0AF5A-0A7E-4061-8B33-659963E6D070}' # Has to be static, otherwise each new build will be considered different module
+    Guid = '{B1A2BC05-5038-40C2-8E34-B54804EA7AD6}' # Has to be static, otherwise each new build will be considered different module
 
-    PowerShellVersion = '6.2'
+    PowerShellVersion = '5.0'
 
     FunctionsToExport = $FunctionPath | Get-ChildItem -Filter *.ps1 | Get-FunctionsToExport
 
