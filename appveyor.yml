@@ -17,6 +17,9 @@ install:
 build: off
 test_script:
   - ps: |
+      $ErrorActionPreference = "Stop"
+      .\Build.ps1
+      Import-Module -Name '.\src\PSPetstoreDemo'
       $Result = Invoke-Pester -PassThru
       if ($Result.FailedCount -gt 0) {
           $host.SetShouldExit($Result.FailedCount)
