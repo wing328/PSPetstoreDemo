@@ -13,7 +13,10 @@ image:
   # ref: https://www.appveyor.com/docs/build-environment/#build-worker-images
 install:
   - ps: $PSVersionTable.PSVersion
-  - ps: Install-Module Pester -Force -Scope CurrentUser
+  - ps: Install-Module -Name Pester -Force -Scope CurrentUser
+  - ps: |
+      .\Build.ps1
+      Import-Module -Name '.\src\PSPetstoreDemo'
 build: off
 test_script:
   - ps: |
