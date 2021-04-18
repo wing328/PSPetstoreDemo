@@ -14,7 +14,7 @@ Describe -tag 'PSPetstoreDemo' -name 'PetApi' {
             # get back the pet from the server
             $Result = Get-PetById -PetId 333
 
-            $Result."id" | Should -Be 336
+            $Result."id" | Should -Be 333
             $Result."name" | Should -Be "Name_test"
 
         }
